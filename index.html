@@ -1,32 +1,117 @@
-<!doctype html><html lang="bg"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Описание на услугите, финансовите инструменти и рисковете</title><style>
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Описание на услугите, финансовите инструменти и рисковете</title>
+<style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;color:#2b1a10;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
 background:radial-gradient(ellipse at 20% 15%,rgba(255,205,130,.18),transparent 30%),
-radial-gradient(ellipse at 80% 70%,rgba(45,18,8,.28),transparent 35%),
-repeating-linear-gradient(3deg,rgba(70,32,14,.20) 0 2px,rgba(185,113,59,.10) 3px 8px,rgba(62,27,12,.16) 10px 12px),
-linear-gradient(90deg,#4a2818,#7a4527 45%,#a9683a 70%,#4a2818);background-attachment:fixed}
-header{position:sticky;top:0;z-index:10;padding:12px 16px;background:rgba(48,24,13,.95);
-backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(0,0,0,.35);color:#fff4e8}
-.title{font-weight:750;font-size:clamp(17px,3vw,24px)} .sub{opacity:.82;font-size:12px;margin-top:3px}
-nav{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
-nav a,.btn{color:#fff8ef;text-decoration:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);
-border-radius:10px;padding:7px 10px;font-size:13px;font-weight:650}
-main{width:min(980px,calc(100% - 18px));margin:16px auto 45px}
-.paper{background:#f8f7f3;color:#241b16;border-radius:6px;box-shadow:0 10px 28px rgba(0,0,0,.42);padding:28px 24px}
-.page-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:18px}
-.page-no{font-weight:800;color:#6b3a21}.content p{font-size:16px;line-height:1.62;margin:0 0 14px}
-.content h2{font-size:20px;line-height:1.25;margin:22px 0 12px;color:#5a2d19}.content h2:first-child{margin-top:0}
-.controls{display:flex;justify-content:space-between;gap:8px;margin-top:18px}.controls a{flex:1;text-align:center}.controls .center{flex:1.3}
-.chapter{background:rgba(25,11,5,.38);border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:14px;margin-bottom:12px}
-.chapter h2{color:#fff3e5;margin:0 0 8px;font-size:17px}.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
-.grid a{display:flex;justify-content:center;align-items:center;min-height:38px}
-footer{text-align:center;color:#ffe9d4;padding:10px 10px 28px;font-size:12px}
-@media(max-width:600px){main{width:calc(100% - 8px)}.paper{padding:20px 15px}.content p{font-size:15px;line-height:1.55}.grid{grid-template-columns:repeat(4,1fr)}}
-</style></head><body>
-<header><div class="title">Описание на услугите, финансовите инструменти и рисковете</div>
+radial-gradient(ellipse at 80% 70%,rgba(45,18,8,.20),transparent 35%),
+repeating-linear-gradient(3deg,rgba(70,32,14,.14) 0 2px,rgba(185,113,59,.08) 3px 8px,rgba(62,27,12,.12) 10px 12px),
+linear-gradient(90deg,#6b4028,#9b6846 45%,#b9845d 70%,#6b4028);background-attachment:fixed}
+header{position:sticky;top:0;z-index:10;padding:14px 16px;color:#fff4e8;background:rgba(55,31,19,.94);
+backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(0,0,0,.30)}
+.title{font-weight:750;font-size:clamp(17px,3vw,24px)}.sub{margin-top:4px;font-size:12px;opacity:.82}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+nav a,.page-link{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:7px 11px;
+border-radius:9px;color:#fff8ef;text-decoration:none;background:rgba(255,255,255,.12);
+border:1px solid rgba(255,255,255,.16);font-size:13px;font-weight:650}
+nav a:hover,.page-link:hover{background:rgba(255,255,255,.20)}
+main{width:min(980px,calc(100% - 18px));margin:18px auto 44px}
+.chapter{margin-bottom:14px;padding:16px;border-radius:12px;background:rgba(55,29,16,.58);
+border:1px solid rgba(255,255,255,.13);box-shadow:0 7px 20px rgba(0,0,0,.20)}
+.chapter h2{margin:0 0 12px;color:#fff3e5;font-size:18px;line-height:1.3}
+.grid{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
+.page-link{min-height:40px}
+footer{padding:10px 10px 28px;text-align:center;color:#ffe9d4;font-size:12px}
+@media(max-width:600px){main{width:calc(100% - 8px)}.grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<header>
+<div class="title">Описание на услугите, финансовите инструменти и рисковете</div>
 <div class="sub">64 страници • интерактивен HTML текст • топъл дървен фон</div>
-<nav><a href="#chapters">📚 Глави и раздели</a><a href="#pages">📄 Всички страници</a></nav></header>
-<main><div id="chapters"><section class="chapter"><h2>Раздел I — Информация за Revolut Securities Europe UAB и нейните инвестиционни услуги</h2><div class="grid"><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-01.html">1</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-02.html">2</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-03.html">3</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-04.html">4</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-05.html">5</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-06.html">6</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-07.html">7</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-08.html">8</a></div></section><section class="chapter"><h2>Раздел II — Попечителство на ценни книжа и парични средства</h2><div class="grid"><a class="btn" href="glavi-i-razdeli/02-razdel-II/page-09.html">9</a><a class="btn" href="glavi-i-razdeli/02-razdel-II/page-10.html">10</a></div></section><section class="chapter"><h2>Раздел III — Информация за трансакциите и свързаните рискове</h2><div class="grid"><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-11.html">11</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-12.html">12</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-13.html">13</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-14.html">14</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-15.html">15</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-16.html">16</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-17.html">17</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-18.html">18</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-19.html">19</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-20.html">20</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-21.html">21</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-22.html">22</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-23.html">23</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-24.html">24</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-25.html">25</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-26.html">26</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-27.html">27</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-28.html">28</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-29.html">29</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-30.html">30</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-31.html">31</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-32.html">32</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-33.html">33</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-34.html">34</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-35.html">35</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-36.html">36</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-37.html">37</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-38.html">38</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-39.html">39</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-40.html">40</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-41.html">41</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-42.html">42</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-43.html">43</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-44.html">44</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-45.html">45</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-46.html">46</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-47.html">47</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-48.html">48</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-49.html">49</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-50.html">50</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-51.html">51</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-52.html">52</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-53.html">53</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-54.html">54</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-55.html">55</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-56.html">56</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-57.html">57</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-58.html">58</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-59.html">59</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-60.html">60</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-61.html">61</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-62.html">62</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-63.html">63</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-64.html">64</a></div></section></div><section id="pages" class="chapter"><h2>Всички страници</h2><div class="grid"><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-01.html">1</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-02.html">2</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-03.html">3</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-04.html">4</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-05.html">5</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-06.html">6</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-07.html">7</a><a class="btn" href="glavi-i-razdeli/01-razdel-I/page-08.html">8</a><a class="btn" href="glavi-i-razdeli/02-razdel-II/page-09.html">9</a><a class="btn" href="glavi-i-razdeli/02-razdel-II/page-10.html">10</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-11.html">11</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-12.html">12</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-13.html">13</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-14.html">14</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-15.html">15</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-16.html">16</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-17.html">17</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-18.html">18</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-19.html">19</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-20.html">20</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-21.html">21</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-22.html">22</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-23.html">23</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-24.html">24</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-25.html">25</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-26.html">26</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-27.html">27</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-28.html">28</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-29.html">29</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-30.html">30</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-31.html">31</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-32.html">32</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-33.html">33</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-34.html">34</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-35.html">35</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-36.html">36</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-37.html">37</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-38.html">38</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-39.html">39</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-40.html">40</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-41.html">41</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-42.html">42</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-43.html">43</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-44.html">44</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-45.html">45</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-46.html">46</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-47.html">47</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-48.html">48</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-49.html">49</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-50.html">50</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-51.html">51</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-52.html">52</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-53.html">53</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-54.html">54</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-55.html">55</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-56.html">56</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-57.html">57</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-58.html">58</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-59.html">59</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-60.html">60</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-61.html">61</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-62.html">62</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-63.html">63</a><a class="btn" href="glavi-i-razdeli/03-razdel-III/page-64.html">64</a></div></section></main>
-<footer>Вариант Б: всяка страница е реален HTML текст.</footer></body></html>
+<nav><a href="#chapters">📚 Глави и раздели</a><a href="#pages">📄 Всички страници</a></nav>
+</header>
+
+<main>
+<div id="chapters"></div>
+<section id="pages" class="chapter">
+<h2>Всички страници</h2>
+<div id="all-pages" class="grid"></div>
+</section>
+</main>
+
+<footer>Вариант Б: всяка страница е реален HTML текст.</footer>
+
+<script>
+const sections = [
+    {
+        folder: "01-razdel-l",
+        title: "Раздел I — Информация за Revolut Securities Europe UAB и нейните инвестиционни услуги",
+        from: 1,
+        to: 8
+    },
+    {
+        folder: "02-razdel-ll",
+        title: "Раздел II — Попечителство на ценни книжа и парични средства",
+        from: 9,
+        to: 10
+    },
+    {
+        folder: "03-razdel-lll",
+        title: "Раздел III — Информация за трансакциите и свързаните рискове",
+        from: 11,
+        to: 64
+    }
+];
+
+function pageFile(number) {
+    return `page-${String(number).padStart(2, "0")}.html`;
+}
+
+function pageUrl(section, number) {
+    return `glavi-razdeli/${section.folder}/${pageFile(number)}`;
+}
+
+const chapters = document.getElementById("chapters");
+const allPages = document.getElementById("all-pages");
+
+for (const section of sections) {
+    const chapter = document.createElement("section");
+    chapter.className = "chapter";
+
+    const title = document.createElement("h2");
+    title.textContent = section.title;
+    chapter.appendChild(title);
+
+    const grid = document.createElement("div");
+    grid.className = "grid";
+
+    for (let number = section.from; number <= section.to; number++) {
+        const link = document.createElement("a");
+        link.className = "page-link";
+        link.href = pageUrl(section, number);
+        link.textContent = number;
+        grid.appendChild(link);
+    }
+
+    chapter.appendChild(grid);
+    chapters.appendChild(chapter);
+}
+
+for (const section of sections) {
+    for (let number = section.from; number <= section.to; number++) {
+        const link = document.createElement("a");
+        link.className = "page-link";
+        link.href = pageUrl(section, number);
+        link.textContent = number;
+        allPages.appendChild(link);
+    }
+}
+</script>
+</body>
+</html>
